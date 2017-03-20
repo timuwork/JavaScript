@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>script</title>
+	<script type="text/javascript">
+		function sayScript(){
+			// alert("<\/script>")
+		}
+		sayScript();
+
+		fn(2,2);
+
+
+		setTimeout(function () {
+			alert(2);
+		},1000)
+		alert(1);
+
+
+		 function fn(x,y){
+		 	sum = x*x + y*y;
+		 	var result = Math.sqrt(sum);
+		 	console.log(result);
+		 }
+			var gn = function(x,y){
+		 	var sum = x*x + y*y;
+		 	var result = Math.sqrt(sum);
+		 	console.log(result);
+ 		}
+		 gn(2,2);
+		 
+	</script>
+	<script type="text/javascript" src="path/to/script1.js" async></script>  
+	<script type="text/javascript" src="path/to/script2.js" async></script>
+	<script type="text/javascript" src="path/to/script1.js" defer="defer"></script>
+	<script type="text/javascript" src="path/to/script2.js" defer="defer"></script>
+</head>
+<body>
+	<!--html主体内容-->
+	<script type="text/javascript"><!--JS内容--></script>
+</body>
+</html>
