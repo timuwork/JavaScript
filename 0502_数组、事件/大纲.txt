@@ -1,0 +1,41 @@
+数组
+数组是什么？
+怎么创建数组
+数组的方法
+forEach  for循环遍历
+
+push() 添加元素到数组的末尾
+pop() 删除数组末尾的元素
+shift() 删除数组最前面（头部）的元素
+unshift()添加到数组的前面（头部）
+
+
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+DOM （Document Object Model）
+DOM是什么 (图)
+DOM节点层级关系
+获取元素 document.getElementById
+        document.querySelector("")
+        document.querySelectorAll("")
+设置元素属性
+设置元素style
+创建元素
+附加append元素
+
+
+
+
+事件
+HTML内联属性
+DOM属性绑定
+多个元素绑定事件
+onclick addEventListener
+区别？ 绑定两个事件表现效果
+
+// 可选
+事件冒泡
+事件捕获
+事件代理
+
+cn.mikecrm.com/5bNxaXE

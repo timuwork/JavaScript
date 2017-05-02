@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Task 01</title>
+    <style>
+        /*CSS 选择器*/
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #ddd;
+        }
+        #button {
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+<label>请输入北京今天空气质量：<input id="aqi-input" type="text"></label>
+<button id="button">确认填写</button>
+
+<div>您输入的值是：<span id="aqi-display">尚无录入</span></div>
+
+
+<input type="button" id="showBox" value="显示盒子"><div>
+
+<!-- <div class="box"></div> -->
+
+<script type="text/javascript">
+
+var aqiInput = document.querySelector("#aqi-input");
+var aqiButton = document.querySelector("#button");
+var aqiDisplay = document.querySelector("#aqi-display");
+
+// 对按钮绑定事件
+// on + 事件名 mouseover 
+aqiButton.onclick = function () {
+    // 点击按钮后，触发
+
+    console.log(aqiDisplay.innerHTML);
+    console.warn(aqiInput.value); // 文本框的值
+    aqiDisplay.innerHTML = aqiInput.value;
+
+}
+
+
+var showBoxBtn = document.querySelector("#showBox");
+
+showBoxBtn.onclick = function () {
+    // document.createElement
+
+    var box = document.createElement("div");
+    box.className = "box";
+    // appendChild 往里面加元素 从最后加
+    document.body.appendChild(box)
+
+    // var box = "<div class='box'></div>";
+    // document.body = box;
+
+}
+
+
+
+</script>
+</body>
+</html>

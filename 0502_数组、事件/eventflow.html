@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <div id="wrapper">
+    <button id="event">事件处理程序</button>
+</div>
+<script>
+  var wrapper = document.getElementById('wrapper');
+var event = document.getElementById('event');
+
+wrapper.addEventListener("click", function(e){
+    console.log('捕获阶段执行父元素wrapper的事件处理程序');
+}, true);
+wrapper.addEventListener("click", function(e){
+    console.log('冒泡阶段执行父元素wrapper的事件处理程序');
+}, false);
+event.addEventListener("click", function(e){
+    console.log('捕获阶段执行子元素event的事件处理程序');
+}, true);
+event.addEventListener("click", function(e){
+    console.log('冒泡阶段执行子元素event的事件处理程序');
+}, false);
+// 参考地址：http://www.jianshu.com/p/84622d166e67
+</script>
+</body>
+</html>

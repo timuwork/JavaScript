@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- 写个input 按钮元素 -->
+	<input type="button" class="btn" value="button">
+	<input type="button" class="btn" value="button1">
+	<input type="button" class="btn" value="button2">
+	<input type="button" class="btn" value="button3">
+	<input type="button" class="btn" value="button4">
+	<input type="button" class="btn" value="button5">
+	<input type="button" class="btn" value="button6">
+	<input type="button" class="btn" value="button7">
+	<input type="button" class="btn" value="button8">
+	<input type="button" class="btn" value="button9">
+	<input type="button" class="btn" value="button10">
+	<input type="button" class="btn" value="button11">
+
+	<input type="button" id="createEle" value="create"> 
+
+	<!-- 写script标签，在里面写内容 -->
+
+	<script>
+		
+		// 获取元素 document.querySelector()
+		// document.querySelectorAll()
+ 		
+		bindEvent();
+ 		function bindEvent() {
+ 			var showBtn = document.querySelectorAll(".btn");
+ 			for(var i = 0; i< showBtn.length; i++ ) {
+	 			showBtn[i].onclick = function () {
+	 				alert(1);
+	 			}
+ 			}
+ 		}
+
+ 		document.querySelector("#createEle").addEventListener("click", function () {
+ 			createElement();
+			bindEvent();
+ 		})
+
+ 		function createElement() {
+ 			var box = document.createElement("input");
+		    box.className = "btn";
+		    box.value = "button30";
+		    box.type = "button";
+		    // appendChild 往里面加元素 从最后加
+		    document.body.appendChild(box)
+ 		}
+
+
+
+
+		// 为元素绑定事件 元素.onclick = function () {}
+		// addEventListener 
+		// onclick 最多绑定一个事件，
+		/*
+		showBtn.onclick = function () {
+			alert(1);
+		}
+		// 第二个会把第一个覆盖掉
+		showBtn.onclick = function () {
+			alert(2);
+		}
+		*/
+		// addEventListener 可以绑定多个事件，按顺序触发
+		/*
+		showBtn.addEventListener("click", function () {
+			alert(1);
+		})
+		showBtn.addEventListener("click", function () {
+			alert(2);
+		})
+		showBtn.addEventListener("click", function () {
+			alert(3);
+		})
+		showBtn.addEventListener("click", function () {
+			alert(4);
+		})
+		*/
+
+	</script>
+
+
+</body>
+</html>
