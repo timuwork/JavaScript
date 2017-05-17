@@ -1,0 +1,22 @@
+考试内容：
+JS基础知识（选择题10题）
+网页实战（制作一张简单页面）
+
+复习内容：
+JS基础知识
+常见网页布局
+CSS各属性的使用
+定位 posititon：absolute 和 position：relative
+http://www.w3cplus.com/css/advanced-html-css-lesson2-detailed-css-positioning.html
+清除浮动 
+http://zh.learnlayout.com/clearfix.html
+
+任务描述
+* 参考 PSD设计稿，实现页面开发，要求实现效果与 样例 基本一致
+* 页面中的各字体大小，内外边距等可参看 标注图
+* 页面宽度固定（定宽）
+任务注意事项
+* 只需要完成HTML，CSS代码编写，不需要写JavaScript
+* 设计稿中的图片、文案均可自行设定
+* 在Chrome中完美实现符合标注中的各项说明
+* 有能力的同学可以尝试跨浏览器的兼容性
